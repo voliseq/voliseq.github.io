@@ -25,17 +25,56 @@ header {
   min-height: 360px; }
 
 #my-info .row {
-  padding: 17px 40px 18px 40px;
   min-height: 120px;
   max-height: 120px; }
   #my-info .row .box {
     height: 120px; }
 
+#my-info .sweep-right {
+  cursor: pointer;
+  max-height: 120px;
+  min-height: 120px; }
+
 #my-info .row:first-child {
   background-color: #224870; }
+  #my-info .row:first-child .name-title {
+    padding: 17px 40px 18px 40px; }
+  #my-info .row:first-child .name-title, #my-info .row:first-child .sweep-right {
+    max-height: 120px;
+    min-height: 120px; }
+  #my-info .row:first-child .sweep-right {
+    background-size: 200% 100%;
+    transition: background-position .5s;
+    background-image: linear-gradient(to right, #1f4165 50%, #112a44 50%); }
+    #my-info .row:first-child .sweep-right i {
+      color: #7b8fa4;
+      transition: color 0.5s;
+      position: relative;
+      top: 25px;
+      left: 30px; }
+  #my-info .row:first-child .sweep-right:hover {
+    background-position: -100% 0%; }
+    #my-info .row:first-child .sweep-right:hover i {
+      color: #fff; }
 
 #my-info .row:nth-child(2) {
   background-color: #1f4165; }
+  #my-info .row:nth-child(2) .position-title {
+    padding: 23px 40px 34px 40px; }
+  #my-info .row:nth-child(2) .sweep-right {
+    background-size: 200% 100%;
+    transition: background-position .5s;
+    background-image: linear-gradient(to right, #1f4165 50%, #153454 50%); }
+    #my-info .row:nth-child(2) .sweep-right i {
+      color: #9ba9b7;
+      transition: color 0.5s;
+      position: relative;
+      top: 25px;
+      left: 22px; }
+  #my-info .row:nth-child(2) .sweep-right:hover {
+    background-position: -100% 0%; }
+    #my-info .row:nth-child(2) .sweep-right:hover i {
+      color: #fff; }
 
 #my-info .row:nth-child(3) {
   background-color: #fff; }
@@ -44,13 +83,44 @@ header {
   cursor: pointer;
   padding: 0; }
   #my-info #boxes .box {
+    text-align: center;
     transition: background-position .5s;
     background-size: 100% 200%; }
+    #my-info #boxes .box a {
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      height: 120px; }
+    #my-info #boxes .box i {
+      color: #b5d8ed; }
+    #my-info #boxes .box span {
+      font-size: 0.875rem;
+      font-weight: 600;
+      display: block;
+      color: #fff; }
   #my-info #boxes .box:hover {
     background-position: 0 -100%; }
   #my-info #boxes .box:first-child {
-    background-image: linear-gradient(to bottom, #4EA5D9 50%, #337ab7 50%); }
+    background-image: linear-gradient(to bottom, #4EA5D9 50%, #4a9ece 50%); }
+    #my-info #boxes .box:first-child i {
+      position: relative;
+      top: 13px; }
+    #my-info #boxes .box:first-child span {
+      position: relative;
+      top: 38px; }
   #my-info #boxes .box:nth-child(2) {
-    background-color: #4a9ece; }
+    background-image: linear-gradient(to bottom, #4a9ece 50%, #428eba 50%); }
+    #my-info #boxes .box:nth-child(2) i {
+      position: relative;
+      top: 19px; }
+    #my-info #boxes .box:nth-child(2) span {
+      position: relative;
+      top: 36px; }
   #my-info #boxes .box:nth-child(3) {
-    background-color: #428eba; }
+    background-image: linear-gradient(to bottom, #428eba 50%, #337ab7 50%); }
+    #my-info #boxes .box:nth-child(3) i {
+      position: relative;
+      top: 19px; }
+    #my-info #boxes .box:nth-child(3) span {
+      position: relative;
+      top: 31px; }

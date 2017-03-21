@@ -2,7 +2,6 @@
 
 
     var myButton = document.getElementById("colorChange");
-    console.log(myButton);
     myButton.addEventListener('click', function(e){
         e = e || window.event;
         var target = e.target;
@@ -12,6 +11,7 @@
             target.style.backgroundColor = "yellow";
         }
     })
+
 
 
 })();
