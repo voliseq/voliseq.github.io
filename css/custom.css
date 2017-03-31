@@ -1,25 +1,37 @@
-@import url("https://fonts.googleapis.com/css?family=Exo+2:200,400");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 body {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 1rem; }
 
-#content {
-  max-width: 1260px; }
-
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Exo 2", sans-serif; }
 
 h1 {
   font-size: 2.5rem; }
 
+.uppercase {
+  text-transform: uppercase; }
+
+.color-blue {
+  color: #3498db; }
+
+.nopadding {
+  padding: 0; }
+
+#content {
+  max-width: 1260px; }
+
+.padding-50 {
+  padding: 50px; }
+
+.flex-row {
+  display: flex; }
+
 header {
   color: #fff; }
   header h1, header h2 {
     font-weight: 200; }
-
-.padding-50 {
-  padding: 50px; }
 
 #main-photo {
   background: url("../img/main-photo.jpg");
@@ -129,42 +141,74 @@ header {
       position: relative;
       top: 31px; }
 
-#personal {
+#personal-row #personal {
   background-color: #f2faff; }
-  #personal .dividewhite {
+  #personal-row #personal .dividewhite {
     height: 50px; }
-  #personal h3 {
+  #personal-row #personal h3 {
     margin: 0;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.8125rem; }
-  #personal p {
+  #personal-row #personal p {
     margin: 0;
     font-family: "Open Sans", sans-serif; }
-  #personal .one, #personal .two {
+  #personal-row #personal .one, #personal-row #personal .two {
     display: inline-block; }
-  #personal .one {
+  #personal-row #personal .one {
     display: inline-block;
     width: 30%;
     margin-right: 21px;
     z-index: 2;
     padding-top: 2px;
     vertical-align: top; }
-  #personal .one p {
+  #personal-row #personal .one p {
     text-transform: uppercase;
     line-height: 1.6em;
     font-size: 14px;
     font-weight: 700;
     color: #3f3f3f; }
-  #personal .two p {
+  #personal-row #personal .two p {
     line-height: 1.6em;
     font-size: 14px;
     font-weight: 400; }
-  #personal .two {
+  #personal-row #personal .two {
     display: inline-block;
     position: relative;
     width: 60%; }
-  #personal .box {
+  #personal-row #personal .box {
     margin: 0 0 13px 0;
     display: block;
     clear: both; }
+
+#personal-row #details i {
+  font-size: 2.25rem; }
+
+#personal-row #details .title, #personal-row #details .subtitle {
+  font-weight: 400; }
+
+#personal-row #details .quote {
+  margin: 14px 0; }
+  #personal-row #details .quote h4 {
+    color: #406e8e;
+    font-size: 1rem;
+    margin: 0;
+    padding-top: 5px; }
+
+#personal-row #details h3.title {
+  font-size: 1.8125rem; }
+
+#personal-row #details .dividewhite {
+  height: 30px; }
+
+#personal-row #details .divider-dynamic {
+  height: 10px; }
+
+#personal-row #details .infoblock h4 {
+  font-weight: 500;
+  font-size: 1rem; }
+
+#personal-row #details .infoblock p {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 0.875rem;
+  color: #3f3f3f; }

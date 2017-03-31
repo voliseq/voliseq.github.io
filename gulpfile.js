@@ -3,11 +3,13 @@
  */
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    live = require('gulp-livereload');
+    live = require('gulp-livereload'),
+    concat = require("gulp-concat");
 
 gulp.task("sass", function(){
 
     return gulp.src('./sass/*.scss')
+        .pipe(concat('custom.scss'))
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css'));
 
