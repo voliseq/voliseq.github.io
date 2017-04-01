@@ -1,6 +1,7 @@
 $white-font: #fff;
 $color-blue: #3498db;
 $color-light-blue: #dcf3fb;
+$color-light-blue2: #cfe5f1;
 @import url('https://fonts.googleapis.com/css?family=Exo+2:200,400,500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 //fonts
@@ -23,6 +24,10 @@ h1 {
 h3.title{
     margin: 0;
     font-size: 1.8125rem;
+}
+.font-regular-normal{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
 }
 // colors
 .color-blue {
@@ -59,4 +64,20 @@ h3.title{
 }
 .dividewhite4{
     height: 40px;
+}
+ //buttons
+.btn-wh-trans{
+    transition: background 0.5s ease;
+    color: $white-font;
+    background: #4492bf;
+    padding: 1px 5px;
+    font-size: 0.6875rem;
+    padding: 3px 9px 2px 9px;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-right: 12px;
+    &:hover{
+        background: #e74c3c;
+    }
 }

@@ -17,6 +17,10 @@ h3.title {
   margin: 0;
   font-size: 1.8125rem; }
 
+.font-regular-normal {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
 .color-blue {
   color: #3498db; }
 
@@ -44,6 +48,20 @@ h3.title {
 .dividewhite4 {
   height: 40px; }
 
+.btn-wh-trans {
+  transition: background 0.5s ease;
+  color: #fff;
+  background: #4492bf;
+  padding: 1px 5px;
+  font-size: 0.6875rem;
+  padding: 3px 9px 2px 9px;
+  line-height: 1.5;
+  border-radius: 3px;
+  margin-top: 8px;
+  margin-right: 12px; }
+  .btn-wh-trans:hover {
+    background: #e74c3c; }
+
 header {
   color: #fff; }
   header h1, header h2 {
@@ -57,8 +75,7 @@ header {
   min-height: 360px; }
 
 #my-info .row {
-  min-height: 120px;
-  max-height: 120px; }
+  min-height: 120px; }
   #my-info .row .box {
     height: 120px; }
 
@@ -278,16 +295,15 @@ header {
       padding-left: 0;
       margin-bottom: 23px;
       list-style: none; }
-  #my-experience .btn-wh-trans {
-    transition: background 0.5s ease;
-    color: #fff;
-    background: #4492bf;
-    padding: 1px 5px;
-    font-size: 0.6875rem;
-    padding: 3px 9px 2px 9px;
-    line-height: 1.5;
-    border-radius: 3px;
-    margin-top: 8px;
-    margin-right: 12px; }
-    #my-experience .btn-wh-trans:hover {
-      background: #e74c3c; }
+
+#my-technologies {
+  background: #cfe5f1; }
+  #my-technologies h4 {
+    color: #3f3f3f;
+    margin-top: 24px;
+    letter-spacing: 1px;
+    font-weight: 700; }
+  #my-technologies p {
+    font-size: 0.875em;
+    line-height: 1.5em;
+    color: #3f3f3f; }

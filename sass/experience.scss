@@ -56,19 +56,18 @@
             list-style: none;
         }
     }
-    .btn-wh-trans{
-        transition: background 0.5s ease;
-        color: $white-font;
-        background: #4492bf;
-        padding: 1px 5px;
-        font-size: 0.6875rem;
-        padding: 3px 9px 2px 9px;
-        line-height: 1.5;
-        border-radius: 3px;
-        margin-top: 8px;
-        margin-right: 12px;
-        &:hover{
-            background: #e74c3c;
-        }
+}
+#my-technologies{
+    background: $color-light-blue2;
+    h4{
+        color: #3f3f3f;
+        margin-top: 24px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+    p{
+        font-size: 0.875em;
+        line-height: 1.5em;
+        color: #3f3f3f;
     }
 }
