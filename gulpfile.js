@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 gulp.task("sass", function(){
 
-    return gulp.src('./sass/*.scss')
+    return gulp.src('./sass/style.scss')
         .pipe(concat('custom.scss'))
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./css'));

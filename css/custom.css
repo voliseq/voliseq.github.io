@@ -13,6 +13,10 @@ h1 {
 .uppercase {
   text-transform: uppercase; }
 
+h3.title {
+  margin: 0;
+  font-size: 1.8125rem; }
+
 .color-blue {
   color: #3498db; }
 
@@ -27,6 +31,18 @@ h1 {
 
 .flex-row {
   display: flex; }
+
+.dividewhite1 {
+  height: 10px; }
+
+.dividewhite2 {
+  height: 20px; }
+
+.dividewhite3 {
+  height: 30px; }
+
+.dividewhite4 {
+  height: 40px; }
 
 header {
   color: #fff; }
@@ -212,3 +228,66 @@ header {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 0.875rem;
   color: #3f3f3f; }
+
+#my-experience {
+  background-color: #dcf3fb; }
+  #my-experience .exp {
+    border-left: 1px solid #3498db;
+    overflow: visible;
+    position: relative;
+    padding-left: 24px;
+    margin-left: 7px; }
+    #my-experience .exp a {
+      transition: opacity 0.3s ease; }
+    #my-experience .exp a:hover {
+      text-decoration: none;
+      cursor: pointer;
+      opacity: .6; }
+    #my-experience .exp li, #my-experience .exp li a {
+      color: #3f3f3f; }
+    #my-experience .exp li.date {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.6875rem;
+      margin-bottom: 0;
+      position: relative;
+      display: block;
+      font-weight: 400;
+      line-height: 1.2em; }
+    #my-experience .exp li.company {
+      font-family: "Exo 2", sans-serif;
+      position: relative;
+      font-size: 1rem;
+      font-weight: 600; }
+      #my-experience .exp li.company a::before {
+        background: #3498db;
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border-radius: 4px;
+        top: 7px;
+        left: -29px;
+        content: ""; }
+    #my-experience .exp li.position {
+      font-family: "Open Sans", sans-serif;
+      margin: 0 0 0 0;
+      display: block;
+      line-height: 0.75rem;
+      font-size: 0.8125rem; }
+    #my-experience .exp ul {
+      margin-top: 0;
+      padding-left: 0;
+      margin-bottom: 23px;
+      list-style: none; }
+  #my-experience .btn-wh-trans {
+    transition: background 0.5s ease;
+    color: #fff;
+    background: #4492bf;
+    padding: 1px 5px;
+    font-size: 0.6875rem;
+    padding: 3px 9px 2px 9px;
+    line-height: 1.5;
+    border-radius: 3px;
+    margin-top: 8px;
+    margin-right: 12px; }
+    #my-experience .btn-wh-trans:hover {
+      background: #e74c3c; }

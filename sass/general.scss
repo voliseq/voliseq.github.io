@@ -1,5 +1,6 @@
 $white-font: #fff;
 $color-blue: #3498db;
+$color-light-blue: #dcf3fb;
 @import url('https://fonts.googleapis.com/css?family=Exo+2:200,400,500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 //fonts
@@ -19,7 +20,10 @@ h1 {
 .uppercase{
     text-transform: uppercase;
 }
-
+h3.title{
+    margin: 0;
+    font-size: 1.8125rem;
+}
 // colors
 .color-blue {
     color: $color-blue;
@@ -43,4 +47,16 @@ h1 {
 .flex-row {
     display: flex;
 
+}
+.dividewhite1{
+    height: 10px;
+}
+.dividewhite2{
+    height: 20px;
+}
+.dividewhite3{
+    height: 30px;
+}
+.dividewhite4{
+    height: 40px;
 }

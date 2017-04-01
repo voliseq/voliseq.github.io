@@ -1,0 +1,74 @@
+#my-experience {
+    background-color: $color-light-blue;
+    .exp {
+        border-left: 1px solid rgb(52, 152, 219);
+        overflow: visible;
+        position: relative;
+        padding-left: 24px;
+        margin-left: 7px;
+        a{
+            transition: opacity 0.3s ease;
+        }
+        a:hover{
+            text-decoration: none;
+            cursor: pointer;
+            opacity: .6;
+        }
+        li, li a {
+            color: #3f3f3f;
+        }
+        li.date {
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.6875rem;
+            margin-bottom: 0;
+            position: relative;
+            display: block;
+            font-weight: 400;
+            line-height: 1.2em;
+        }
+        li.company {
+            font-family: "Exo 2", sans-serif;
+            position: relative;
+            font-size: 1rem;
+            font-weight: 600;
+            a::before {
+                background: rgb(52, 152, 219);
+                position: absolute;
+                width: 9px;
+                height: 9px;
+                border-radius: 4px;
+                top: 7px;
+                left: -29px;
+                content: "";
+            }
+        }
+        li.position {
+            font-family: "Open Sans", sans-serif;
+            margin: 0 0 0 0;
+            display: block;
+            line-height: 0.75rem;
+            font-size: 0.8125rem;
+        }
+        ul {
+            margin-top: 0;
+            padding-left: 0;
+            margin-bottom: 23px;
+            list-style: none;
+        }
+    }
+    .btn-wh-trans{
+        transition: background 0.5s ease;
+        color: $white-font;
+        background: #4492bf;
+        padding: 1px 5px;
+        font-size: 0.6875rem;
+        padding: 3px 9px 2px 9px;
+        line-height: 1.5;
+        border-radius: 3px;
+        margin-top: 8px;
+        margin-right: 12px;
+        &:hover{
+            background: #e74c3c;
+        }
+    }
+}
