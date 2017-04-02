@@ -59,6 +59,16 @@
 }
 #my-technologies{
     background: $color-light-blue2;
+    .angular-icon{
+        margin-bottom: 0px;
+        font-size: 68px;
+        color: #ef9b88;
+        position: relative;
+        bottom: 7px;
+    }
+    h4.angular{
+        margin-top: 2px;
+    }
     h4{
         color: #3f3f3f;
         margin-top: 24px;
@@ -69,5 +79,12 @@
         font-size: 0.875em;
         line-height: 1.5em;
         color: #3f3f3f;
+    }
+    i.js{
+        color: #fcd102;
+    }
+    i.d3{
+        color: #49dae7;;
+    ;
     }
 }

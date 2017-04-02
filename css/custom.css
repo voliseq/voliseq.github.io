@@ -21,6 +21,14 @@ h3.title {
   font-family: "Open Sans", sans-serif;
   font-weight: 400; }
 
+.font-accident-two-normal {
+  font-weight: 400;
+  font-family: "Exo 2", sans-serif; }
+
+.font-accident-two-bold {
+  font-weight: bold;
+  font-family: "Exo 2", sans-serif; }
+
 .color-blue {
   color: #3498db; }
 
@@ -298,6 +306,14 @@ header {
 
 #my-technologies {
   background: #cfe5f1; }
+  #my-technologies .angular-icon {
+    margin-bottom: 0px;
+    font-size: 68px;
+    color: #ef9b88;
+    position: relative;
+    bottom: 7px; }
+  #my-technologies h4.angular {
+    margin-top: 2px; }
   #my-technologies h4 {
     color: #3f3f3f;
     margin-top: 24px;
@@ -307,3 +323,7 @@ header {
     font-size: 0.875em;
     line-height: 1.5em;
     color: #3f3f3f; }
+  #my-technologies i.js {
+    color: #fcd102; }
+  #my-technologies i.d3 {
+    color: #49dae7; }
