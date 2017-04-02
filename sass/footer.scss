@@ -1,0 +1,36 @@
+footer.dark{
+    background-color: $color-footer-bg;
+    h5{
+        font-size: 1rem;
+        color: #efefef;
+    }
+    p{
+        padding-top: 10px;
+        font-size: 0.8125rem;
+        font-family: "Open Sans", sans-serif;
+        color: #cfe5f1;
+    }
+    .cv-link a{
+        font-size: 0.875rem;
+        text-decoration: none;
+        padding: 4px 9px 3px 9px;
+        color: #cfe5f1;
+        background: transparent;
+        border: 1px solid #4492BF;
+        display: inline-block;
+        margin: 2px 0 4px 0;
+        border-radius: 2px;
+        box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0 0;
+        transition: all 0.35s ease-in-out;
+        i{
+            font-weight: bold;
+            font-size: 0.7rem;
+            margin-right: 10px;
+            padding-top: 2px;
+        }
+        &:hover{
+            border-color: #e74c3c;
+            background: transparent;
+        }
+    }
+}

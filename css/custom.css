@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 1rem; }
 
@@ -327,3 +329,34 @@ header {
     color: #fcd102; }
   #my-technologies i.d3 {
     color: #49dae7; }
+
+footer.dark {
+  background-color: #224870; }
+  footer.dark h5 {
+    font-size: 1rem;
+    color: #efefef; }
+  footer.dark p {
+    padding-top: 10px;
+    font-size: 0.8125rem;
+    font-family: "Open Sans", sans-serif;
+    color: #cfe5f1; }
+  footer.dark .cv-link a {
+    font-size: 0.875rem;
+    text-decoration: none;
+    padding: 4px 9px 3px 9px;
+    color: #cfe5f1;
+    background: transparent;
+    border: 1px solid #4492BF;
+    display: inline-block;
+    margin: 2px 0 4px 0;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0 0;
+    transition: all 0.35s ease-in-out; }
+    footer.dark .cv-link a i {
+      font-weight: bold;
+      font-size: 0.7rem;
+      margin-right: 10px;
+      padding-top: 2px; }
+    footer.dark .cv-link a:hover {
+      border-color: #e74c3c;
+      background: transparent; }
