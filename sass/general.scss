@@ -3,6 +3,14 @@ $color-blue: #3498db;
 $color-light-blue: #dcf3fb;
 $color-light-blue2: #cfe5f1;
 $color-footer-bg: #224870;
+$color-box-home: #4ea5d9;
+$color-box-home-hover: #4a9ece;
+$color-box-resume: #4a9ece;
+$color-box-resume-hover: #428eba;
+$color-box-portfolio: #428eba;
+$color-box-portfolio-hover: #337ab7;
+$color-nav-i: #b5d8ed;
+
 @import url('https://fonts.googleapis.com/css?family=Exo+2:200,400,500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 //fonts
@@ -39,6 +47,15 @@ h3.title{
 .font-accident-two-bold{
     font-weight: bold;
     font-family: "Exo 2", sans-serif;
+}
+.box span{
+    font-size: 0.875rem;
+    font-weight: 600;
+    display: block;
+    color: #fff;
+}
+.box a{
+    text-decoration: none;
 }
 // colors
 .color-blue {

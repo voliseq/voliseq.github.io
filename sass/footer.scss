@@ -1,4 +1,5 @@
 footer.dark{
+    height: 340px;
     background-color: $color-footer-bg;
     h5{
         font-size: 1rem;
@@ -32,5 +33,49 @@ footer.dark{
             border-color: #e74c3c;
             background: transparent;
         }
+    }
+    .email{
+        text-align: right;
+    }
+
+    .box{
+        transition: background-position .5s;
+        &:hover {
+            background-position: 0 -100%;
+        }
+        text-align: center;
+        i{
+            color: $color-nav-i;
+            display: block;
+            position: relative;
+            top: 13px;
+        }
+        span{
+            position: relative;
+            top: 30px;
+        }
+
+        &.home{
+            background-size: 200% 100%;
+            background-image: linear-gradient(to right, $color-box-home 50%, $color-box-home-hover 50%);
+            &:hover{
+                background-position: -100% 0%;
+            }
+        }
+        &.resume{
+            background-size: 200% 100%;
+            background-image: linear-gradient(to right, $color-box-home 50%, $color-box-home-hover 50%);
+            &:hover{
+                background-position: -100% 0%;
+            }
+        }
+        &.portfolio{
+            background-size: 100% 200%;
+            background-image: linear-gradient(to bottom, $color-box-portfolio 50%, $color-box-portfolio-hover 50%);
+            &:hover {
+                background-position: 0 -100%;
+            }
+        }
+        height: 120px;
     }
 }

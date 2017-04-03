@@ -31,6 +31,15 @@ h3.title {
   font-weight: bold;
   font-family: "Exo 2", sans-serif; }
 
+.box span {
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: block;
+  color: #fff; }
+
+.box a {
+  text-decoration: none; }
+
 .color-blue {
   color: #3498db; }
 
@@ -160,7 +169,7 @@ header {
   #my-info #boxes .box:hover {
     background-position: 0 -100%; }
   #my-info #boxes .box:first-child {
-    background-image: linear-gradient(to bottom, #4EA5D9 50%, #4a9ece 50%); }
+    background-image: linear-gradient(to bottom, #4ea5d9 50%, #4a9ece 50%); }
     #my-info #boxes .box:first-child i {
       position: relative;
       top: 13px; }
@@ -331,6 +340,7 @@ header {
     color: #49dae7; }
 
 footer.dark {
+  height: 340px;
   background-color: #224870; }
   footer.dark h5 {
     font-size: 1rem;
@@ -360,3 +370,34 @@ footer.dark {
     footer.dark .cv-link a:hover {
       border-color: #e74c3c;
       background: transparent; }
+  footer.dark .email {
+    text-align: right; }
+  footer.dark .box {
+    transition: background-position .5s;
+    text-align: center;
+    height: 120px; }
+    footer.dark .box:hover {
+      background-position: 0 -100%; }
+    footer.dark .box i {
+      color: #b5d8ed;
+      display: block;
+      position: relative;
+      top: 13px; }
+    footer.dark .box span {
+      position: relative;
+      top: 30px; }
+    footer.dark .box.home {
+      background-size: 200% 100%;
+      background-image: linear-gradient(to right, #4ea5d9 50%, #4a9ece 50%); }
+      footer.dark .box.home:hover {
+        background-position: -100% 0%; }
+    footer.dark .box.resume {
+      background-size: 200% 100%;
+      background-image: linear-gradient(to right, #4ea5d9 50%, #4a9ece 50%); }
+      footer.dark .box.resume:hover {
+        background-position: -100% 0%; }
+    footer.dark .box.portfolio {
+      background-size: 100% 200%;
+      background-image: linear-gradient(to bottom, #428eba 50%, #337ab7 50%); }
+      footer.dark .box.portfolio:hover {
+        background-position: 0 -100%; }
