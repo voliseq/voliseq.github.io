@@ -393,7 +393,7 @@ footer.dark {
         background-position: -100% 0%; }
     footer.dark .box.resume {
       background-size: 200% 100%;
-      background-image: linear-gradient(to right, #4ea5d9 50%, #4a9ece 50%); }
+      background-image: linear-gradient(to right, #4a9ece 50%, #428eba 50%); }
       footer.dark .box.resume:hover {
         background-position: -100% 0%; }
     footer.dark .box.portfolio {

@@ -64,7 +64,7 @@ footer.dark{
         }
         &.resume{
             background-size: 200% 100%;
-            background-image: linear-gradient(to right, $color-box-home 50%, $color-box-home-hover 50%);
+            background-image: linear-gradient(to right, $color-box-resume 50%, $color-box-resume-hover 50%);
             &:hover{
                 background-position: -100% 0%;
             }
