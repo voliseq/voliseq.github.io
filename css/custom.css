@@ -86,12 +86,12 @@ header {
   header h1, header h2 {
     font-weight: 200; }
 
-#main-photo {
+.main-photo {
   background: url("../img/main-photo.jpg");
   background-position: center -50px;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 360px; }
+  height: 360px; }
 
 #my-info .row {
   min-height: 120px; }
@@ -99,6 +99,7 @@ header {
     height: 120px; }
 
 #my-info .sweep-right {
+  text-align: center;
   cursor: pointer;
   max-height: 120px;
   min-height: 120px; }
@@ -118,8 +119,7 @@ header {
       color: #7b8fa4;
       transition: color 0.5s;
       position: relative;
-      top: 25px;
-      left: 30px; }
+      top: 25px; }
   #my-info .row:first-child .sweep-right:hover {
     background-position: -100% 0%; }
     #my-info .row:first-child .sweep-right:hover i {
@@ -137,8 +137,7 @@ header {
       color: #9ba9b7;
       transition: color 0.5s;
       position: relative;
-      top: 25px;
-      left: 22px; }
+      top: 25px; }
   #my-info .row:nth-child(2) .sweep-right:hover {
     background-position: -100% 0%; }
     #my-info .row:nth-child(2) .sweep-right:hover i {
