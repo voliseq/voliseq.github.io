@@ -4,85 +4,15 @@ header {
     h1, h2 {
         font-weight: 200;
     }
-}
 
-.main-photo {
-    background: url('../img/main-photo.jpg');
-    background-position: center -50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 360px;
-}
-
-#my-info {
-    .row {
-        min-height: 120px;
-        .box {
-            height: 120px;
-        }
+    .main-photo {
+        background: url('../img/main-photo.jpg');
+        background-position: center -50px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 360px;
     }
-    .sweep-right {
-        text-align: center;
-        cursor: pointer;
-        max-height: 120px;
-        min-height: 120px;
-    }
-    .row:first-child {
-        background-color: #224870;
-        .name-title {
-            padding: 17px 40px 18px 40px;
-        }
-        .name-title, .sweep-right {
-            max-height: 120px;
-            min-height: 120px;
-        }
-        .sweep-right {
-            i {
-                color: #7b8fa4;
-                transition: color 0.5s;
-                position: relative;
-                top: 25px;
-            }
-
-            background-size: 200% 100%;
-            transition: background-position .5s;
-            background-image: linear-gradient(to right, #1f4165 50%, #112a44 50%);
-        }
-        .sweep-right:hover {
-            i {
-                color: $white-font;
-            }
-            background-position: -100% 0%;
-        }
-    }
-    .row:nth-child(2) {
-        .position-title {
-            padding: 23px 40px 34px 40px;
-        }
-        .sweep-right {
-            background-size: 200% 100%;
-            transition: background-position .5s;
-            background-image: linear-gradient(to right, #1f4165 50%, #153454 50%);
-            i {
-                color: #9ba9b7;
-                transition: color 0.5s;
-                position: relative;
-                top: 25px;
-            }
-        }
-        .sweep-right:hover {
-            i {
-                color: $white-font;
-            }
-            background-position: -100% 0%;
-        }
-        background-color: #1f4165;
-    }
-    .row:nth-child(3) {
-        background-color: #fff;
-    }
-
-    #boxes {
+    .boxes {
         cursor: pointer;
         padding: 0;
         .box {
@@ -143,8 +73,104 @@ header {
         }
     }
 
+    .row {
+        min-height: 120px;
+        .box {
+            height: 120px;
+        }
+    }
+    .sweep-right {
+        text-align: center;
+        cursor: pointer;
+        height: 120px;
+    }
+    .row:first-child {
+        background-color: #224870;
+        .name-title {
+            padding: 17px 40px 18px 40px;
+        }
+        .name-title, .sweep-right {
+            max-height: 120px;
+            min-height: 120px;
+        }
+        .sweep-right {
+            i {
+                color: #7b8fa4;
+                transition: color 0.5s;
+                position: relative;
+                top: 25px;
+            }
+
+            background-size: 200% 100%;
+            transition: background-position .5s;
+            background-image: linear-gradient(to right, #1f4165 50%, #112a44 50%);
+        }
+        .sweep-right:hover {
+            i {
+                color: $white-font;
+            }
+            background-position: -100% 0%;
+        }
+    }
+    .row:nth-child(2) {
+        .position-title {
+            padding: 23px 40px 34px 40px;
+        }
+        .sweep-right {
+            background-size: 200% 100%;
+            transition: background-position .5s;
+            background-image: linear-gradient(to right, #1f4165 50%, #153454 50%);
+            i {
+                color: #9ba9b7;
+                transition: color 0.5s;
+                position: relative;
+                top: 25px;
+            }
+        }
+        .sweep-right:hover {
+            i {
+                color: $white-font;
+            }
+            background-position: -100% 0%;
+        }
+        background-color: #1f4165;
+    }
+    .row:nth-child(3) {
+        background-color: #fff;
+    }
+
+    @media only screen and (max-width: 992px) {
+        .main-photo {
+            background-position: center center;
+        }
+        .name-title h1 {
+            font-size: 2.2rem;
+        }
+        .position-title h2 {
+            font-size: 1.7rem;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .row .my-info {
+            .sweep-right:first-child {
+                background-image: linear-gradient(to right, #224870 50%, #112a44 50%);
+            }
+            .sweep-right:nth-child(2) {
+                background-image: linear-gradient(to right, #1f4165 50%, #153454 50%);
+            }
+            .sweep-right {
+                i {
+                    top: 50px;
+                }
+                min-height: 180px;
+            }
+        }
+
+    }
+
 }
 
-@media(max-width: 968px){
 
-}
+
+
+

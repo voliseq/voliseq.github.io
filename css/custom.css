@@ -43,8 +43,17 @@ h3.title {
 .color-blue {
   color: #3498db; }
 
+@media only screen and (max-width: 992px) {
+  .row.flex-row {
+    display: block; } }
+
 .nopadding {
+  margin: 0;
   padding: 0; }
+
+.row-no-padding {
+  margin-left: 0;
+  margin-right: 0; }
 
 #content {
   max-width: 1260px; }
@@ -85,112 +94,120 @@ header {
   color: #fff; }
   header h1, header h2 {
     font-weight: 200; }
-
-.main-photo {
-  background: url("../img/main-photo.jpg");
-  background-position: center -50px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 360px; }
-
-#my-info .row {
-  min-height: 120px; }
-  #my-info .row .box {
-    height: 120px; }
-
-#my-info .sweep-right {
-  text-align: center;
-  cursor: pointer;
-  max-height: 120px;
-  min-height: 120px; }
-
-#my-info .row:first-child {
-  background-color: #224870; }
-  #my-info .row:first-child .name-title {
-    padding: 17px 40px 18px 40px; }
-  #my-info .row:first-child .name-title, #my-info .row:first-child .sweep-right {
-    max-height: 120px;
+  header .main-photo {
+    background: url("../img/main-photo.jpg");
+    background-position: center -50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px; }
+  header .boxes {
+    cursor: pointer;
+    padding: 0; }
+    header .boxes .box {
+      text-align: center;
+      transition: background-position .5s;
+      background-size: 100% 200%; }
+      header .boxes .box a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 120px; }
+      header .boxes .box i {
+        color: #b5d8ed; }
+      header .boxes .box span {
+        font-size: 0.875rem;
+        font-weight: 600;
+        display: block;
+        color: #fff; }
+    header .boxes .box:hover {
+      background-position: 0 -100%; }
+    header .boxes .box:first-child {
+      background-image: linear-gradient(to bottom, #4ea5d9 50%, #4a9ece 50%); }
+      header .boxes .box:first-child i {
+        position: relative;
+        top: 13px; }
+      header .boxes .box:first-child span {
+        position: relative;
+        top: 38px; }
+    header .boxes .box:nth-child(2) {
+      background-image: linear-gradient(to bottom, #4a9ece 50%, #428eba 50%); }
+      header .boxes .box:nth-child(2) i {
+        position: relative;
+        top: 19px; }
+      header .boxes .box:nth-child(2) span {
+        position: relative;
+        top: 36px; }
+    header .boxes .box:nth-child(3) {
+      background-image: linear-gradient(to bottom, #428eba 50%, #337ab7 50%); }
+      header .boxes .box:nth-child(3) i {
+        position: relative;
+        top: 19px; }
+      header .boxes .box:nth-child(3) span {
+        position: relative;
+        top: 31px; }
+  header .row {
     min-height: 120px; }
-  #my-info .row:first-child .sweep-right {
-    background-size: 200% 100%;
-    transition: background-position .5s;
-    background-image: linear-gradient(to right, #1f4165 50%, #112a44 50%); }
-    #my-info .row:first-child .sweep-right i {
-      color: #7b8fa4;
-      transition: color 0.5s;
-      position: relative;
-      top: 25px; }
-  #my-info .row:first-child .sweep-right:hover {
-    background-position: -100% 0%; }
-    #my-info .row:first-child .sweep-right:hover i {
-      color: #fff; }
-
-#my-info .row:nth-child(2) {
-  background-color: #1f4165; }
-  #my-info .row:nth-child(2) .position-title {
-    padding: 23px 40px 34px 40px; }
-  #my-info .row:nth-child(2) .sweep-right {
-    background-size: 200% 100%;
-    transition: background-position .5s;
-    background-image: linear-gradient(to right, #1f4165 50%, #153454 50%); }
-    #my-info .row:nth-child(2) .sweep-right i {
-      color: #9ba9b7;
-      transition: color 0.5s;
-      position: relative;
-      top: 25px; }
-  #my-info .row:nth-child(2) .sweep-right:hover {
-    background-position: -100% 0%; }
-    #my-info .row:nth-child(2) .sweep-right:hover i {
-      color: #fff; }
-
-#my-info .row:nth-child(3) {
-  background-color: #fff; }
-
-#my-info #boxes {
-  cursor: pointer;
-  padding: 0; }
-  #my-info #boxes .box {
-    text-align: center;
-    transition: background-position .5s;
-    background-size: 100% 200%; }
-    #my-info #boxes .box a {
-      text-decoration: none;
-      display: block;
-      width: 100%;
+    header .row .box {
       height: 120px; }
-    #my-info #boxes .box i {
-      color: #b5d8ed; }
-    #my-info #boxes .box span {
-      font-size: 0.875rem;
-      font-weight: 600;
-      display: block;
-      color: #fff; }
-  #my-info #boxes .box:hover {
-    background-position: 0 -100%; }
-  #my-info #boxes .box:first-child {
-    background-image: linear-gradient(to bottom, #4ea5d9 50%, #4a9ece 50%); }
-    #my-info #boxes .box:first-child i {
-      position: relative;
-      top: 13px; }
-    #my-info #boxes .box:first-child span {
-      position: relative;
-      top: 38px; }
-  #my-info #boxes .box:nth-child(2) {
-    background-image: linear-gradient(to bottom, #4a9ece 50%, #428eba 50%); }
-    #my-info #boxes .box:nth-child(2) i {
-      position: relative;
-      top: 19px; }
-    #my-info #boxes .box:nth-child(2) span {
-      position: relative;
-      top: 36px; }
-  #my-info #boxes .box:nth-child(3) {
-    background-image: linear-gradient(to bottom, #428eba 50%, #337ab7 50%); }
-    #my-info #boxes .box:nth-child(3) i {
-      position: relative;
-      top: 19px; }
-    #my-info #boxes .box:nth-child(3) span {
-      position: relative;
-      top: 31px; }
+  header .sweep-right {
+    text-align: center;
+    cursor: pointer;
+    height: 120px; }
+  header .row:first-child {
+    background-color: #224870; }
+    header .row:first-child .name-title {
+      padding: 17px 40px 18px 40px; }
+    header .row:first-child .name-title, header .row:first-child .sweep-right {
+      max-height: 120px;
+      min-height: 120px; }
+    header .row:first-child .sweep-right {
+      background-size: 200% 100%;
+      transition: background-position .5s;
+      background-image: linear-gradient(to right, #1f4165 50%, #112a44 50%); }
+      header .row:first-child .sweep-right i {
+        color: #7b8fa4;
+        transition: color 0.5s;
+        position: relative;
+        top: 25px; }
+    header .row:first-child .sweep-right:hover {
+      background-position: -100% 0%; }
+      header .row:first-child .sweep-right:hover i {
+        color: #fff; }
+  header .row:nth-child(2) {
+    background-color: #1f4165; }
+    header .row:nth-child(2) .position-title {
+      padding: 23px 40px 34px 40px; }
+    header .row:nth-child(2) .sweep-right {
+      background-size: 200% 100%;
+      transition: background-position .5s;
+      background-image: linear-gradient(to right, #1f4165 50%, #153454 50%); }
+      header .row:nth-child(2) .sweep-right i {
+        color: #9ba9b7;
+        transition: color 0.5s;
+        position: relative;
+        top: 25px; }
+    header .row:nth-child(2) .sweep-right:hover {
+      background-position: -100% 0%; }
+      header .row:nth-child(2) .sweep-right:hover i {
+        color: #fff; }
+  header .row:nth-child(3) {
+    background-color: #fff; }
+  @media only screen and (max-width: 992px) {
+    header .main-photo {
+      background-position: center center; }
+    header .name-title h1 {
+      font-size: 2.2rem; }
+    header .position-title h2 {
+      font-size: 1.7rem; } }
+  @media only screen and (max-width: 768px) {
+    header .row .my-info .sweep-right:first-child {
+      background-image: linear-gradient(to right, #224870 50%, #112a44 50%); }
+    header .row .my-info .sweep-right:nth-child(2) {
+      background-image: linear-gradient(to right, #1f4165 50%, #153454 50%); }
+    header .row .my-info .sweep-right {
+      min-height: 180px; }
+      header .row .my-info .sweep-right i {
+        top: 50px; } }
 
 #personal-row #personal {
   background-color: #f2faff; }
@@ -232,37 +249,34 @@ header {
     display: block;
     clear: both; }
 
-#personal-row #details i {
-  font-size: 2.25rem; }
-
-#personal-row #details .title, #personal-row #details .subtitle {
-  font-weight: 400; }
-
-#personal-row #details .quote {
-  margin: 14px 0; }
-  #personal-row #details .quote h4 {
-    color: #406e8e;
-    font-size: 1rem;
-    margin: 0;
-    padding-top: 5px; }
-
-#personal-row #details h3.title {
-  font-size: 1.8125rem; }
-
-#personal-row #details .dividewhite {
-  height: 30px; }
-
-#personal-row #details .divider-dynamic {
-  height: 10px; }
-
-#personal-row #details .infoblock h4 {
-  font-weight: 500;
-  font-size: 1rem; }
-
-#personal-row #details .infoblock p {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 0.875rem;
-  color: #3f3f3f; }
+#personal-row #details {
+  flex-shrink: 1;
+  flex-basis: auto;
+  display: flex; }
+  #personal-row #details i {
+    font-size: 2.25rem; }
+  #personal-row #details .title, #personal-row #details .subtitle {
+    font-weight: 400; }
+  #personal-row #details .quote {
+    margin: 14px 0; }
+    #personal-row #details .quote h4 {
+      color: #406e8e;
+      font-size: 1rem;
+      margin: 0;
+      padding-top: 5px; }
+  #personal-row #details h3.title {
+    font-size: 1.8125rem; }
+  #personal-row #details .dividewhite {
+    height: 30px; }
+  #personal-row #details .divider-dynamic {
+    height: 10px; }
+  #personal-row #details .infoblock h4 {
+    font-weight: 500;
+    font-size: 1rem; }
+  #personal-row #details .infoblock p {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 0.875rem;
+    color: #3f3f3f; }
 
 #my-experience {
   background-color: #dcf3fb; }

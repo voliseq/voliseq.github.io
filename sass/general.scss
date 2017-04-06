@@ -1,15 +1,4 @@
-$white-font: #fff;
-$color-blue: #3498db;
-$color-light-blue: #dcf3fb;
-$color-light-blue2: #cfe5f1;
-$color-footer-bg: #224870;
-$color-box-home: #4ea5d9;
-$color-box-home-hover: #4a9ece;
-$color-box-resume: #4a9ece;
-$color-box-resume-hover: #428eba;
-$color-box-portfolio: #428eba;
-$color-box-portfolio-hover: #337ab7;
-$color-nav-i: #b5d8ed;
+
 
 @import url('https://fonts.googleapis.com/css?family=Exo+2:200,400,500');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
@@ -64,11 +53,19 @@ h3.title{
 
 //paddings n display
 
-
+@media only screen and (max-width: 992px){
+    .row.flex-row{
+        display: block;
+    }
+}
 .nopadding{
+    margin: 0;
     padding: 0;
 }
-
+.row-no-padding{
+    margin-left: 0;
+    margin-right: 0;
+}
 #content {
     max-width: 1260px;
 }
@@ -109,3 +106,5 @@ h3.title{
         background: #e74c3c;
     }
 }
+
+

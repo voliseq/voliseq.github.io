@@ -51,13 +51,16 @@
         }
     }
     #details {
-        i{
+        flex-shrink: 1;
+        flex-basis: auto;
+        display: flex;
+        i {
             font-size: 2.25rem;
         }
         .title, .subtitle {
             font-weight: 400;
         }
-        .quote{
+        .quote {
             margin: 14px 0;
             h4 {
                 color: #406e8e;
@@ -70,20 +73,20 @@
             font-size: 1.8125rem;
         }
 
-        .dividewhite{
+        .dividewhite {
             height: 30px;
         }
 
-        .divider-dynamic{
+        .divider-dynamic {
             height: 10px;
         }
 
-        .infoblock{
-            h4{
+        .infoblock {
+            h4 {
                 font-weight: 500;
                 font-size: 1rem;
             }
-            p{
+            p {
                 font-family: Verdana, Arial, Helvetica, sans-serif;
                 font-size: 0.875rem;
                 color: #3f3f3f;
