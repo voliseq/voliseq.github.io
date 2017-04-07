@@ -56,7 +56,7 @@ header {
             }
             span {
                 position: relative;
-                top: 36px;
+                top: 38px;
             }
             background-image: linear-gradient(to bottom, $color-box-resume 50%, $color-box-resume-hover 50%);
         }
@@ -67,7 +67,7 @@ header {
             }
             span {
                 position: relative;
-                top: 31px;
+                top: 38px;
             }
             background-image: linear-gradient(to bottom, $color-box-portfolio 50%, $color-box-portfolio-hover 50%);
         }
@@ -90,7 +90,6 @@ header {
             padding: 17px 40px 18px 40px;
         }
         .name-title, .sweep-right {
-            max-height: 120px;
             min-height: 120px;
         }
         .sweep-right {
@@ -160,13 +159,30 @@ header {
             }
             .sweep-right {
                 i {
-                    top: 50px;
+                    font-size: 3rem;
+                    top: 60px;
                 }
                 min-height: 180px;
             }
         }
+        .name-title h1{
+            font-size: 2.5rem;
+        }
+        .position-title h2{
+            font-size: 1.8rem;
+        }
+        .boxes .box
+        {
+            i{
+                font-size: 2.5rem;
+            }
+            span{
+                font-size: 0.8rem;
+            }
+        }
 
     }
+
 
 }
 

@@ -43,10 +43,6 @@ h3.title {
 .color-blue {
   color: #3498db; }
 
-@media only screen and (max-width: 992px) {
-  .row.flex-row {
-    display: block; } }
-
 .nopadding {
   margin: 0;
   padding: 0; }
@@ -75,6 +71,22 @@ h3.title {
 
 .dividewhite4 {
   height: 40px; }
+
+.dividewhite5 {
+  height: 50px; }
+
+.divider-dynamic {
+  height: 10px; }
+
+@media only screen and (max-width: 992px) {
+  .row.flex-row {
+    display: block; }
+  .divider-dynamic {
+    height: 40px; } }
+
+@media only screen and (max-width: 480px) {
+  .padding-50 {
+    padding: 30px 14px 35px 14px; } }
 
 .btn-wh-trans {
   transition: background 0.5s ease;
@@ -136,7 +148,7 @@ header {
         top: 19px; }
       header .boxes .box:nth-child(2) span {
         position: relative;
-        top: 36px; }
+        top: 38px; }
     header .boxes .box:nth-child(3) {
       background-image: linear-gradient(to bottom, #428eba 50%, #337ab7 50%); }
       header .boxes .box:nth-child(3) i {
@@ -144,7 +156,7 @@ header {
         top: 19px; }
       header .boxes .box:nth-child(3) span {
         position: relative;
-        top: 31px; }
+        top: 38px; }
   header .row {
     min-height: 120px; }
     header .row .box {
@@ -158,7 +170,6 @@ header {
     header .row:first-child .name-title {
       padding: 17px 40px 18px 40px; }
     header .row:first-child .name-title, header .row:first-child .sweep-right {
-      max-height: 120px;
       min-height: 120px; }
     header .row:first-child .sweep-right {
       background-size: 200% 100%;
@@ -207,12 +218,19 @@ header {
     header .row .my-info .sweep-right {
       min-height: 180px; }
       header .row .my-info .sweep-right i {
-        top: 50px; } }
+        font-size: 3rem;
+        top: 60px; }
+    header .name-title h1 {
+      font-size: 2.5rem; }
+    header .position-title h2 {
+      font-size: 1.8rem; }
+    header .boxes .box i {
+      font-size: 2.5rem; }
+    header .boxes .box span {
+      font-size: 0.8rem; } }
 
 #personal-row #personal {
   background-color: #f2faff; }
-  #personal-row #personal .dividewhite {
-    height: 50px; }
   #personal-row #personal h3 {
     margin: 0;
     text-transform: uppercase;
@@ -268,8 +286,6 @@ header {
     font-size: 1.8125rem; }
   #personal-row #details .dividewhite {
     height: 30px; }
-  #personal-row #details .divider-dynamic {
-    height: 10px; }
   #personal-row #details .infoblock h4 {
     font-weight: 500;
     font-size: 1rem; }
