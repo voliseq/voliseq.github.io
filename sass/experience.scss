@@ -1,90 +1,110 @@
-#my-experience {
-    background-color: $color-light-blue;
-    .exp {
-        border-left: 1px solid rgb(52, 152, 219);
-        overflow: visible;
-        position: relative;
-        padding-left: 24px;
-        margin-left: 7px;
-        a{
-            transition: opacity 0.3s ease;
-        }
-        a:hover{
-            text-decoration: none;
-            cursor: pointer;
-            opacity: .6;
-        }
-        li, li a {
-            color: #3f3f3f;
-        }
-        li.date {
-            font-family: "Open Sans", sans-serif;
-            font-size: 0.6875rem;
-            margin-bottom: 0;
+#exp{
+    #my-experience {
+        background-color: $color-light-blue;
+        .exp {
+            border-left: 1px solid rgb(52, 152, 219);
+            overflow: visible;
             position: relative;
-            display: block;
-            font-weight: 400;
-            line-height: 1.2em;
-        }
-        li.company {
-            font-family: "Exo 2", sans-serif;
-            position: relative;
-            font-size: 1rem;
-            font-weight: 600;
-            a::before {
-                background: rgb(52, 152, 219);
-                position: absolute;
-                width: 9px;
-                height: 9px;
-                border-radius: 4px;
-                top: 7px;
-                left: -29px;
-                content: "";
+            padding-left: 24px;
+            margin-left: 7px;
+            a{
+                transition: opacity 0.3s ease;
+            }
+            a:hover{
+                text-decoration: none;
+                cursor: pointer;
+                opacity: .6;
+            }
+            li, li a {
+                color: #3f3f3f;
+            }
+            li.date {
+                font-family: "Open Sans", sans-serif;
+                font-size: 0.6875rem;
+                margin-bottom: 0;
+                position: relative;
+                display: block;
+                font-weight: 400;
+                line-height: 1.2em;
+            }
+            li.company {
+                font-family: "Exo 2", sans-serif;
+                position: relative;
+                font-size: 1rem;
+                font-weight: 600;
+                a::before {
+                    background: rgb(52, 152, 219);
+                    position: absolute;
+                    width: 9px;
+                    height: 9px;
+                    border-radius: 4px;
+                    top: 7px;
+                    left: -29px;
+                    content: "";
+                }
+            }
+            li.position {
+                font-family: "Open Sans", sans-serif;
+                margin: 0 0 0 0;
+                display: block;
+                line-height: 0.75rem;
+                font-size: 0.8125rem;
+            }
+            ul {
+                margin-top: 0;
+                padding-left: 0;
+                margin-bottom: 23px;
+                list-style: none;
             }
         }
-        li.position {
-            font-family: "Open Sans", sans-serif;
-            margin: 0 0 0 0;
-            display: block;
-            line-height: 0.75rem;
-            font-size: 0.8125rem;
+    }
+    #my-technologies{
+        background: $color-light-blue2;
+        .angular-icon{
+            margin-bottom: 0px;
+            font-size: 68px;
+            color: #ef9b88;
+            position: relative;
+            bottom: 7px;
         }
-        ul {
-            margin-top: 0;
-            padding-left: 0;
-            margin-bottom: 23px;
-            list-style: none;
+        h4.angular{
+            margin-top: 2px;
         }
+        h4{
+            color: #3f3f3f;
+            margin-top: 24px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 0.875em;
+            line-height: 1.5em;
+            color: #3f3f3f;
+        }
+        i.js{
+            color: #fcd102;
+        }
+        i.d3{
+            color: #49dae7;
+        }
+    }
+    @media only screen and (max-width: 767px){
+    #my-technologies{
+        .technology{
+            margin-bottom: 2rem;
+        }
+        .technology:last-of-type{
+            margin-bottom: 0;
+        }
+        .angular-icon{
+            line-height: 4rem;
+            bottom: 15px;
+        }
+    }
+
+
+
+
     }
 }
-#my-technologies{
-    background: $color-light-blue2;
-    .angular-icon{
-        margin-bottom: 0px;
-        font-size: 68px;
-        color: #ef9b88;
-        position: relative;
-        bottom: 7px;
-    }
-    h4.angular{
-        margin-top: 2px;
-    }
-    h4{
-        color: #3f3f3f;
-        margin-top: 24px;
-        letter-spacing: 1px;
-        font-weight: 700;
-    }
-    p{
-        font-size: 0.875em;
-        line-height: 1.5em;
-        color: #3f3f3f;
-    }
-    i.js{
-        color: #fcd102;
-    }
-    i.d3{
-        color: #49dae7;;
-    ;
-    }
-}
+

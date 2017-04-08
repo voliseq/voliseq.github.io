@@ -27,48 +27,28 @@ header {
             }
             i {
                 color: #b5d8ed;
+                position: relative;
+                top: 13px;
             }
             span {
                 font-size: 0.875rem;
                 font-weight: 600;
                 display: block;
                 color: $white-font;
+                position: relative;
+                top: 38px;
             }
         }
         .box:hover {
             background-position: 0 -100%;
         }
         .box:first-child {
-            i {
-                position: relative;
-                top: 13px;
-            }
-            span {
-                position: relative;
-                top: 38px;
-            }
             background-image: linear-gradient(to bottom, $color-box-home 50%, $color-box-home-hover 50%);
         }
         .box:nth-child(2) {
-            i {
-                position: relative;
-                top: 19px;
-            }
-            span {
-                position: relative;
-                top: 38px;
-            }
             background-image: linear-gradient(to bottom, $color-box-resume 50%, $color-box-resume-hover 50%);
         }
         .box:nth-child(3) {
-            i {
-                position: relative;
-                top: 19px;
-            }
-            span {
-                position: relative;
-                top: 38px;
-            }
             background-image: linear-gradient(to bottom, $color-box-portfolio 50%, $color-box-portfolio-hover 50%);
         }
     }
@@ -140,7 +120,7 @@ header {
 
     @media only screen and (max-width: 992px) {
         .main-photo {
-            background-position: center center;
+            background-position: center 0;
         }
         .name-title h1 {
             font-size: 2.2rem;
@@ -150,6 +130,15 @@ header {
         }
     }
     @media only screen and (max-width: 767px) {
+        .col-xs-3{
+            width: 30%;
+        }
+        .col-xs-9{
+            width: 70%;
+        }
+        .main-photo {
+            background-position: center -70px;
+        }
         .row .my-info {
             .sweep-right:first-child {
                 background-image: linear-gradient(to right, #224870 50%, #112a44 50%);
@@ -165,25 +154,34 @@ header {
                 min-height: 180px;
             }
         }
-        .name-title h1{
+        .name-title h1 {
             font-size: 2.5rem;
         }
-        .position-title h2{
+        .position-title h2 {
             font-size: 1.8rem;
         }
-        .boxes .box
-        {
-            i{
+        .boxes .box {
+            i {
+                top: 23px;
                 font-size: 2.5rem;
             }
-            span{
+            span {
+                top: 43px;
                 font-size: 0.8rem;
             }
         }
 
     }
-
-
+    @media only screen and (max-width: 600px) {
+        .main-photo {
+            background-position: center -20px;
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .main-photo {
+            background-position: center 0px;
+        }
+    }
 }
 
 

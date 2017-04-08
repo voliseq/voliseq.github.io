@@ -1,5 +1,5 @@
 footer.dark{
-    height: 340px;
+    height: 390px;
     background-color: $color-footer-bg;
     h5{
         font-size: 1rem;
@@ -77,5 +77,27 @@ footer.dark{
             }
         }
         height: 120px;
+    }
+
+    @media only screen and(max-width: 767px){
+        height: auto;
+        .boxes .box
+        {
+            i{
+                top: 23px;
+                font-size: 2.5rem;
+            }
+            span{
+                top: 43px;
+                font-size: 0.8rem;
+            }
+        }
+        .cv-link a{
+            display: block;
+            margin-bottom: 8px;
+        }
+        .cv-link a:last-of-type{
+            margin-bottom: 0;
+        }
     }
 }

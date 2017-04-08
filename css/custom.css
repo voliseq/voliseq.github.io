@@ -9,6 +9,20 @@ body {
 h1, h2, h3, h4 {
   font-family: "Exo 2", sans-serif; }
 
+h3 {
+  line-height: 2.1275rem; }
+
+h4 {
+  line-height: 1.3rem; }
+
+p {
+  line-height: 1.4rem; }
+
+li {
+  line-height: 0.825rem; }
+  li a {
+    line-height: 1.6rem; }
+
 h1 {
   font-size: 2.5rem; }
 
@@ -97,8 +111,7 @@ h3.title {
   padding: 3px 9px 2px 9px;
   line-height: 1.5;
   border-radius: 3px;
-  margin-top: 8px;
-  margin-right: 12px; }
+  margin-top: 8px; }
   .btn-wh-trans:hover {
     background: #e74c3c; }
 
@@ -125,38 +138,24 @@ header {
         width: 100%;
         height: 120px; }
       header .boxes .box i {
-        color: #b5d8ed; }
+        color: #b5d8ed;
+        position: relative;
+        top: 13px; }
       header .boxes .box span {
         font-size: 0.875rem;
         font-weight: 600;
         display: block;
-        color: #fff; }
+        color: #fff;
+        position: relative;
+        top: 38px; }
     header .boxes .box:hover {
       background-position: 0 -100%; }
     header .boxes .box:first-child {
       background-image: linear-gradient(to bottom, #4ea5d9 50%, #4a9ece 50%); }
-      header .boxes .box:first-child i {
-        position: relative;
-        top: 13px; }
-      header .boxes .box:first-child span {
-        position: relative;
-        top: 38px; }
     header .boxes .box:nth-child(2) {
       background-image: linear-gradient(to bottom, #4a9ece 50%, #428eba 50%); }
-      header .boxes .box:nth-child(2) i {
-        position: relative;
-        top: 19px; }
-      header .boxes .box:nth-child(2) span {
-        position: relative;
-        top: 38px; }
     header .boxes .box:nth-child(3) {
       background-image: linear-gradient(to bottom, #428eba 50%, #337ab7 50%); }
-      header .boxes .box:nth-child(3) i {
-        position: relative;
-        top: 19px; }
-      header .boxes .box:nth-child(3) span {
-        position: relative;
-        top: 38px; }
   header .row {
     min-height: 120px; }
     header .row .box {
@@ -205,12 +204,18 @@ header {
     background-color: #fff; }
   @media only screen and (max-width: 992px) {
     header .main-photo {
-      background-position: center center; }
+      background-position: center 0; }
     header .name-title h1 {
       font-size: 2.2rem; }
     header .position-title h2 {
       font-size: 1.7rem; } }
   @media only screen and (max-width: 767px) {
+    header .col-xs-3 {
+      width: 30%; }
+    header .col-xs-9 {
+      width: 70%; }
+    header .main-photo {
+      background-position: center -70px; }
     header .row .my-info .sweep-right:first-child {
       background-image: linear-gradient(to right, #224870 50%, #112a44 50%); }
     header .row .my-info .sweep-right:nth-child(2) {
@@ -225,9 +230,17 @@ header {
     header .position-title h2 {
       font-size: 1.8rem; }
     header .boxes .box i {
+      top: 23px;
       font-size: 2.5rem; }
     header .boxes .box span {
+      top: 43px;
       font-size: 0.8rem; } }
+  @media only screen and (max-width: 600px) {
+    header .main-photo {
+      background-position: center -20px; } }
+  @media only screen and (max-width: 480px) {
+    header .main-photo {
+      background-position: center 0px; } }
 
 #personal-row #personal {
   background-color: #f2faff; }
@@ -294,23 +307,23 @@ header {
     font-size: 0.875rem;
     color: #3f3f3f; }
 
-#my-experience {
+#exp #my-experience {
   background-color: #dcf3fb; }
-  #my-experience .exp {
+  #exp #my-experience .exp {
     border-left: 1px solid #3498db;
     overflow: visible;
     position: relative;
     padding-left: 24px;
     margin-left: 7px; }
-    #my-experience .exp a {
+    #exp #my-experience .exp a {
       transition: opacity 0.3s ease; }
-    #my-experience .exp a:hover {
+    #exp #my-experience .exp a:hover {
       text-decoration: none;
       cursor: pointer;
       opacity: .6; }
-    #my-experience .exp li, #my-experience .exp li a {
+    #exp #my-experience .exp li, #exp #my-experience .exp li a {
       color: #3f3f3f; }
-    #my-experience .exp li.date {
+    #exp #my-experience .exp li.date {
       font-family: "Open Sans", sans-serif;
       font-size: 0.6875rem;
       margin-bottom: 0;
@@ -318,12 +331,12 @@ header {
       display: block;
       font-weight: 400;
       line-height: 1.2em; }
-    #my-experience .exp li.company {
+    #exp #my-experience .exp li.company {
       font-family: "Exo 2", sans-serif;
       position: relative;
       font-size: 1rem;
       font-weight: 600; }
-      #my-experience .exp li.company a::before {
+      #exp #my-experience .exp li.company a::before {
         background: #3498db;
         position: absolute;
         width: 9px;
@@ -332,44 +345,53 @@ header {
         top: 7px;
         left: -29px;
         content: ""; }
-    #my-experience .exp li.position {
+    #exp #my-experience .exp li.position {
       font-family: "Open Sans", sans-serif;
       margin: 0 0 0 0;
       display: block;
       line-height: 0.75rem;
       font-size: 0.8125rem; }
-    #my-experience .exp ul {
+    #exp #my-experience .exp ul {
       margin-top: 0;
       padding-left: 0;
       margin-bottom: 23px;
       list-style: none; }
 
-#my-technologies {
+#exp #my-technologies {
   background: #cfe5f1; }
-  #my-technologies .angular-icon {
+  #exp #my-technologies .angular-icon {
     margin-bottom: 0px;
     font-size: 68px;
     color: #ef9b88;
     position: relative;
     bottom: 7px; }
-  #my-technologies h4.angular {
+  #exp #my-technologies h4.angular {
     margin-top: 2px; }
-  #my-technologies h4 {
+  #exp #my-technologies h4 {
     color: #3f3f3f;
     margin-top: 24px;
     letter-spacing: 1px;
     font-weight: 700; }
-  #my-technologies p {
+  #exp #my-technologies p {
     font-size: 0.875em;
     line-height: 1.5em;
     color: #3f3f3f; }
-  #my-technologies i.js {
+  #exp #my-technologies i.js {
     color: #fcd102; }
-  #my-technologies i.d3 {
+  #exp #my-technologies i.d3 {
     color: #49dae7; }
 
+@media only screen and (max-width: 767px) {
+  #exp #my-technologies .technology {
+    margin-bottom: 2rem; }
+  #exp #my-technologies .technology:last-of-type {
+    margin-bottom: 0; }
+  #exp #my-technologies .angular-icon {
+    line-height: 4rem;
+    bottom: 15px; } }
+
 footer.dark {
-  height: 340px;
+  height: 390px;
   background-color: #224870; }
   footer.dark h5 {
     font-size: 1rem;
@@ -430,3 +452,17 @@ footer.dark {
       background-image: linear-gradient(to bottom, #428eba 50%, #337ab7 50%); }
       footer.dark .box.portfolio:hover {
         background-position: 0 -100%; }
+  @media only screen and (max-width: 767px) {
+    footer.dark {
+      height: auto; }
+      footer.dark .boxes .box i {
+        top: 23px;
+        font-size: 2.5rem; }
+      footer.dark .boxes .box span {
+        top: 43px;
+        font-size: 0.8rem; }
+      footer.dark .cv-link a {
+        display: block;
+        margin-bottom: 8px; }
+      footer.dark .cv-link a:last-of-type {
+        margin-bottom: 0; } }
