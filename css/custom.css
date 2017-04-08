@@ -505,30 +505,72 @@ footer.dark {
     background-color: #f7f7f7; }
     #resume #m-details p {
       color: #676767; }
-  #resume #timeline .timeline-panel {
-    border: 1px solid #676767;
-    padding: 30px; }
-  #resume #timeline .timeline-photo {
-    min-height: 250px; }
-  #resume #timeline .timeline-maciek-01 {
-    background: url(../img/diamed.jpg);
-    background-position: center;
-    background-size: cover; }
-  #resume #timeline .timeline-time {
-    background-color: #676767;
-    padding: 6px 18px;
-    position: absolute;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    color: #fff; }
-  #resume #timeline h4 {
-    font-size: 1.375rem; }
-  #resume #timeline h6, #resume #timeline p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.875rem; }
-  #resume #timeline h6 {
-    margin-bottom: 8px;
-    color: #8f8f8f;
-    letter-spacing: 1px; }
-  #resume #timeline p {
-    margin-bottom: 10px; }
+  #resume #timeline .timeline-vert {
+    list-style: none;
+    position: relative; }
+    #resume #timeline .timeline-vert li {
+      transition: all 0.3s ease;
+      overflow: auto;
+      display: list-item;
+      position: relative; }
+    #resume #timeline .timeline-vert li:hover .timeline-badge {
+      color: #e74c3c; }
+    #resume #timeline .timeline-vert li:hover .timeline-time {
+      background-color: #e74c3c; }
+    #resume #timeline .timeline-vert:before {
+      background-color: #8f8f8f;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      content: " ";
+      width: 1px;
+      opacity: .3;
+      left: 52%;
+      margin-left: -0.5px; }
+    #resume #timeline .timeline-vert .timeline-badge {
+      transition: color .5s ease;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      text-align: center;
+      position: absolute;
+      top: 16px;
+      left: 50%;
+      margin-left: -25px;
+      z-index: 100; }
+    #resume #timeline .timeline-vert .timeline-panel {
+      float: left;
+      width: 46%;
+      border-radius: 0px;
+      padding: 30px;
+      position: relative;
+      border: 1px solid #676767;
+      padding: 30px; }
+      #resume #timeline .timeline-vert .timeline-panel .timeline-photo {
+        min-height: 250px; }
+      #resume #timeline .timeline-vert .timeline-panel .timeline-maciek-01 {
+        background: url(../img/diamed.jpg);
+        background-position: center;
+        background-size: cover; }
+      #resume #timeline .timeline-vert .timeline-panel .timeline-time {
+        transition: background-color .5s ease;
+        background-color: #676767;
+        padding: 6px 18px;
+        position: absolute;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        color: #fff; }
+    #resume #timeline .timeline-vert .timeline-inverted .timeline-panel {
+      float: right; }
+    #resume #timeline .timeline-vert h4 {
+      font-size: 1.375rem; }
+    #resume #timeline .timeline-vert h6, #resume #timeline .timeline-vert p {
+      font-family: "Open Sans", sans-serif;
+      font-size: 0.875rem; }
+    #resume #timeline .timeline-vert h6 {
+      margin-bottom: 8px;
+      color: #8f8f8f;
+      letter-spacing: 1px; }
+    #resume #timeline .timeline-vert p {
+      margin-bottom: 10px; }
