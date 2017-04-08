@@ -1,0 +1,80 @@
+#resume {
+    a{
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: $dark-font;
+        &:hover{
+            color: $red-hover;
+        }
+    }
+    min-height: 500px;
+    background-color: #fff;
+    .inner-section{
+        p{
+            color: $dark-font;
+        }
+        padding: 45px 45px;
+    }
+
+    .inner-section#page-title {
+        color: $white-font;
+        h2 {
+            font-size: 3rem;
+        }
+        h4 {
+            font-size: 1rem;
+            font-weight: 300;
+        }
+        p{
+            color: $white-font;
+        }
+        background-color: rgb(76, 161, 211);
+    }
+
+
+    #m-details{
+        background-color: #f7f7f7;
+        p{
+            color: $medium-dark-font;
+        }
+    }
+
+    #timeline{
+        .timeline-panel{
+            border: 1px solid $medium-dark-font;
+            padding: 30px;
+        }
+        .timeline-photo{
+            min-height: 250px;
+        }
+        .timeline-maciek-01{
+            background: url(../img/diamed.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        .timeline-time{
+            background-color: $medium-dark-font;
+            padding: 6px 18px;
+            position: absolute;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: $white-font;
+        }
+        h4{
+            font-size: 1.375rem;
+        }
+        h6, p{
+            font-family: "Open Sans", sans-serif;
+            font-size: 0.875rem;
+        }
+        h6{
+            margin-bottom: 8px;
+            color: #8f8f8f;
+            letter-spacing: 1px;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+    }
+
+}

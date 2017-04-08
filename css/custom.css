@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,500");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 body {
   -webkit-font-smoothing: antialiased;
@@ -10,13 +10,25 @@ h1, h2, h3, h4 {
   font-family: "Exo 2", sans-serif; }
 
 h3 {
+  font-size: 1.8125rem;
   line-height: 2.1275rem; }
 
+section h3 {
+  margin: 0; }
+
 h4 {
+  font-size: 1rem;
   line-height: 1.3rem; }
 
 p {
+  font-size: 0.875rem;
   line-height: 1.4rem; }
+
+p.small {
+  font-size: 0.8125rem; }
+
+span {
+  font-size: 0.875rem; }
 
 li {
   line-height: 0.825rem; }
@@ -30,8 +42,7 @@ h1 {
   text-transform: uppercase; }
 
 h3.title {
-  margin: 0;
-  font-size: 1.8125rem; }
+  margin: 0; }
 
 .font-regular-normal {
   font-family: "Open Sans", sans-serif;
@@ -466,3 +477,58 @@ footer.dark {
         margin-bottom: 8px; }
       footer.dark .cv-link a:last-of-type {
         margin-bottom: 0; } }
+
+#resume {
+  min-height: 500px;
+  background-color: #fff; }
+  #resume a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333; }
+    #resume a:hover {
+      color: #e74c3c; }
+  #resume .inner-section {
+    padding: 45px 45px; }
+    #resume .inner-section p {
+      color: #333; }
+  #resume .inner-section#page-title {
+    color: #fff;
+    background-color: #4ca1d3; }
+    #resume .inner-section#page-title h2 {
+      font-size: 3rem; }
+    #resume .inner-section#page-title h4 {
+      font-size: 1rem;
+      font-weight: 300; }
+    #resume .inner-section#page-title p {
+      color: #fff; }
+  #resume #m-details {
+    background-color: #f7f7f7; }
+    #resume #m-details p {
+      color: #676767; }
+  #resume #timeline .timeline-panel {
+    border: 1px solid #676767;
+    padding: 30px; }
+  #resume #timeline .timeline-photo {
+    min-height: 250px; }
+  #resume #timeline .timeline-maciek-01 {
+    background: url(../img/diamed.jpg);
+    background-position: center;
+    background-size: cover; }
+  #resume #timeline .timeline-time {
+    background-color: #676767;
+    padding: 6px 18px;
+    position: absolute;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #fff; }
+  #resume #timeline h4 {
+    font-size: 1.375rem; }
+  #resume #timeline h6, #resume #timeline p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem; }
+  #resume #timeline h6 {
+    margin-bottom: 8px;
+    color: #8f8f8f;
+    letter-spacing: 1px; }
+  #resume #timeline p {
+    margin-bottom: 10px; }
