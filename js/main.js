@@ -1,6 +1,6 @@
 (function(){
 
-$("#content").load("templates/resume.html");
+$("#content").load("templates/portfolio.html");
 
 
 $('a').click(function(e){

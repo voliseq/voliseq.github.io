@@ -1,0 +1,33 @@
+#portfolio{
+    a {
+        transition: all 0.3s ease;
+        text-decoration: none;
+        color: $dark-font;
+        &:hover {
+            color: $red-hover;
+        }
+    }
+    min-height: 500px;
+    background-color: #fff;
+    .inner-section {
+        p {
+            color: $dark-font;
+        }
+        padding: 45px 45px;
+    }
+
+    .inner-section#page-title {
+        @include page-title();
+    }
+
+    #portfolio-block{
+        .project-content{
+            height: 250px;
+            background-image: url('../img/eventile.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+
+}
+

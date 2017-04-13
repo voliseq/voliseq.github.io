@@ -72,6 +72,8 @@ h3.title{
 .box a{
     text-decoration: none;
 }
+
+
 // colors
 .color-blue {
     color: $color-blue;
@@ -80,6 +82,12 @@ h3.title{
 //paddings n display
 
 
+.rotate-90{
+    transform: rotate(90deg);
+}
+.rotate-180{
+    transform: rotate(180deg);
+}
 
 .nopadding{
     margin: 0;
@@ -150,4 +158,20 @@ h3.title{
     }
 }
 
+//mixins
 
+@mixin page-title(){
+
+    color: $white-font;
+    h2 {
+        font-size: 3rem;
+    }
+    h4 {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    p {
+        color: $white-font;
+    }
+    background-color: #4ca1d3;
+}

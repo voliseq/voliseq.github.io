@@ -68,6 +68,12 @@ h3.title {
 .color-blue {
   color: #3498db; }
 
+.rotate-90 {
+  transform: rotate(90deg); }
+
+.rotate-180 {
+  transform: rotate(180deg); }
+
 .nopadding {
   margin: 0;
   padding: 0; }
@@ -505,19 +511,20 @@ footer.dark {
     background-color: #f7f7f7; }
     #resume #m-details p {
       color: #676767; }
-  #resume #timeline .timeline-vert {
+  #resume #timeline ul.timeline-vert {
+    padding: 0;
     list-style: none;
     position: relative; }
-    #resume #timeline .timeline-vert li {
+    #resume #timeline ul.timeline-vert li {
       transition: all 0.3s ease;
       overflow: auto;
       display: list-item;
       position: relative; }
-    #resume #timeline .timeline-vert li:hover .timeline-badge {
+    #resume #timeline ul.timeline-vert li:hover .timeline-badge {
       color: #e74c3c; }
-    #resume #timeline .timeline-vert li:hover .timeline-time {
+    #resume #timeline ul.timeline-vert li:hover .timeline-time {
       background-color: #e74c3c; }
-    #resume #timeline .timeline-vert:before {
+    #resume #timeline ul.timeline-vert:before {
       background-color: #8f8f8f;
       top: 0;
       bottom: 0;
@@ -525,9 +532,10 @@ footer.dark {
       content: " ";
       width: 1px;
       opacity: .3;
-      left: 52%;
+      left: 50%;
       margin-left: -0.5px; }
-    #resume #timeline .timeline-vert .timeline-badge {
+    #resume #timeline ul.timeline-vert .timeline-badge {
+      color: #b7b7b7;
       transition: color .5s ease;
       width: 50px;
       height: 50px;
@@ -537,23 +545,24 @@ footer.dark {
       position: absolute;
       top: 16px;
       left: 50%;
-      margin-left: -25px;
+      margin-left: -27px;
       z-index: 100; }
-    #resume #timeline .timeline-vert .timeline-panel {
+    #resume #timeline ul.timeline-vert .timeline-panel {
+      cursor: pointer;
       float: left;
       width: 46%;
       border-radius: 0px;
       padding: 30px;
       position: relative;
-      border: 1px solid #676767;
+      border: 1px dashed #676767;
       padding: 30px; }
-      #resume #timeline .timeline-vert .timeline-panel .timeline-photo {
+      #resume #timeline ul.timeline-vert .timeline-panel .timeline-photo {
         min-height: 250px; }
-      #resume #timeline .timeline-vert .timeline-panel .timeline-maciek-01 {
+      #resume #timeline ul.timeline-vert .timeline-panel .timeline-maciek-01 {
         background: url(../img/diamed.jpg);
         background-position: center;
         background-size: cover; }
-      #resume #timeline .timeline-vert .timeline-panel .timeline-time {
+      #resume #timeline ul.timeline-vert .timeline-panel .timeline-time {
         transition: background-color .5s ease;
         background-color: #676767;
         padding: 6px 18px;
@@ -561,16 +570,68 @@ footer.dark {
         font-size: 0.75rem;
         text-transform: uppercase;
         color: #fff; }
-    #resume #timeline .timeline-vert .timeline-inverted .timeline-panel {
+    #resume #timeline ul.timeline-vert .timeline-inverted .timeline-panel {
       float: right; }
-    #resume #timeline .timeline-vert h4 {
+    #resume #timeline ul.timeline-vert h4 {
       font-size: 1.375rem; }
-    #resume #timeline .timeline-vert h6, #resume #timeline .timeline-vert p {
+    #resume #timeline ul.timeline-vert h6, #resume #timeline ul.timeline-vert p {
       font-family: "Open Sans", sans-serif;
       font-size: 0.875rem; }
-    #resume #timeline .timeline-vert h6 {
+    #resume #timeline ul.timeline-vert h6 {
       margin-bottom: 8px;
       color: #8f8f8f;
       letter-spacing: 1px; }
-    #resume #timeline .timeline-vert p {
+    #resume #timeline ul.timeline-vert p {
       margin-bottom: 10px; }
+  @media only screen and (max-width: 992px) {
+    #resume #timeline ul.timeline-vert li {
+      margin-bottom: 20px; }
+    #resume #timeline ul.timeline-vert:before {
+      left: 40px; }
+    #resume #timeline ul.timeline-vert .timeline-badge {
+      left: 15px !important;
+      margin-left: 0 !important;
+      top: 16px !important; }
+    #resume #timeline ul.timeline-vert .timeline-panel {
+      width: calc(100% - 90px);
+      float: right; } }
+  @media only screen and (max-width: 600px) {
+    #resume .inner-section#page-title h2 {
+      font-size: 2rem; }
+    #resume .inner-section {
+      padding: 45px 15px; }
+    #resume #timeline ul.timeline-vert:before {
+      display: none; }
+    #resume #timeline ul.timeline-vert .timeline-badge {
+      display: none; }
+    #resume #timeline ul.timeline-vert .timeline-panel {
+      width: 100%; } }
+
+#portfolio {
+  min-height: 500px;
+  background-color: #fff; }
+  #portfolio a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: #333; }
+    #portfolio a:hover {
+      color: #e74c3c; }
+  #portfolio .inner-section {
+    padding: 45px 45px; }
+    #portfolio .inner-section p {
+      color: #333; }
+  #portfolio .inner-section#page-title {
+    color: #fff;
+    background-color: #4ca1d3; }
+    #portfolio .inner-section#page-title h2 {
+      font-size: 3rem; }
+    #portfolio .inner-section#page-title h4 {
+      font-size: 1rem;
+      font-weight: 300; }
+    #portfolio .inner-section#page-title p {
+      color: #fff; }
+  #portfolio #portfolio-block .project-content {
+    height: 250px;
+    background-image: url("../img/eventile.jpg");
+    background-size: cover;
+    background-position: center center; }
