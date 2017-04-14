@@ -653,6 +653,8 @@ footer.dark {
       cursor: pointer;
       border: 1px dashed black; }
       #portfolio #portfolio-block .icons-row .icon a {
+        display: block;
+        width: 100%;
         color: #b7b7b7; }
     #portfolio #portfolio-block .icons-row .icon:hover {
       background-color: #b7b7b7; }
