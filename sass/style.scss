@@ -1,12 +1,16 @@
+//overall varaibles
 $white-font: #fff;
 $dark-font: #333;
 $red-hover: #e74c3c;
 $medium-dark-font: #676767;
-
 $color-blue: #3498db;
 $color-light-blue: #dcf3fb;
 $color-light-blue2: #cfe5f1;
-$color-footer-bg: #224870;
+
+
+
+//box n navi variables
+
 $color-box-home: #4ea5d9;
 $color-box-home-hover: #4a9ece;
 $color-box-resume: #4a9ece;
@@ -14,8 +18,15 @@ $color-box-resume-hover: #428eba;
 $color-box-portfolio: #428eba;
 $color-box-portfolio-hover: #337ab7;
 $color-nav-i: #b5d8ed;
+
+//resume variables
 $color-timeline-icon: #b7b7b7;
 
+//portfolio variables
+$portfolio-icons-color: #b7b7b7;
+
+//footer variables
+$color-footer-bg: #224870;
 @import "general";
 @import "header";
 @import "personal";

@@ -630,8 +630,41 @@ footer.dark {
       font-weight: 300; }
     #portfolio .inner-section#page-title p {
       color: #fff; }
-  #portfolio #portfolio-block .project-content {
-    height: 250px;
-    background-image: url("../img/eventile.jpg");
-    background-size: cover;
-    background-position: center center; }
+  #portfolio #portfolio-block .project {
+    margin-bottom: 40px; }
+    #portfolio #portfolio-block .project:nth-last-of-type(-n+2) {
+      margin-bottom: 0; }
+    #portfolio #portfolio-block .project .project-content {
+      height: 300px;
+      background-size: cover;
+      background-position: center center; }
+      #portfolio #portfolio-block .project .project-content.eventile {
+        background-image: url("../img/eventile.jpg"); }
+      #portfolio #portfolio-block .project .project-content.charts {
+        background-image: url("../img/charts.jpg"); }
+      #portfolio #portfolio-block .project .project-content.ihs {
+        background-image: url("../img/ihs.jpg"); }
+      #portfolio #portfolio-block .project .project-content:hover {
+        opacity: .8; }
+  #portfolio #portfolio-block .icons-row {
+    text-align: center; }
+    #portfolio #portfolio-block .icons-row .icon {
+      transition: all 1s ease;
+      cursor: pointer;
+      border: 1px dashed black; }
+      #portfolio #portfolio-block .icons-row .icon a {
+        color: #b7b7b7; }
+    #portfolio #portfolio-block .icons-row .icon:hover {
+      background-color: #b7b7b7; }
+      #portfolio #portfolio-block .icons-row .icon:hover a {
+        color: #fff; }
+  @media only screen and (max-width: 992px) {
+    #portfolio #portfolio-block .project {
+      padding: 0; }
+      #portfolio #portfolio-block .project:nth-last-of-type(-n+2) {
+        margin-bottom: 40px; }
+      #portfolio #portfolio-block .project:last-of-type {
+        margin-bottom: 0; } }
+  @media only screen and (max-width: 600px) {
+    #portfolio .inner-section {
+      padding: 45px 15px; } }

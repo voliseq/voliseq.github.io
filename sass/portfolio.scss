@@ -1,4 +1,4 @@
-#portfolio{
+#portfolio {
     a {
         transition: all 0.3s ease;
         text-decoration: none;
@@ -20,12 +20,73 @@
         @include page-title();
     }
 
-    #portfolio-block{
-        .project-content{
-            height: 250px;
-            background-image: url('../img/eventile.jpg');
-            background-size: cover;
-            background-position: center center;
+    #portfolio-block {
+        .project {
+            margin-bottom: 40px;
+            &:nth-last-of-type(-n+2) {
+                margin-bottom: 0;
+            }
+            .project-content {
+                height: 300px;
+                background-size: cover;
+                background-position: center center;
+                &.eventile {
+                    background-image: url('../img/eventile.jpg');
+                }
+                &.charts {
+                    background-image: url('../img/charts.jpg');
+                }
+                &.ihs {
+                    background-image: url('../img/ihs.jpg');
+                }
+                &:hover {
+                    opacity: .8;
+                }
+            }
+
+        }
+
+        .icons-row {
+            text-align: center;
+            .icon {
+                transition: all 1s ease;
+
+                cursor: pointer;
+                border: 1px dashed black;
+
+                a {
+                    color: $portfolio-icons-color;
+                }
+
+            }
+
+            .icon:hover {
+                background-color: $portfolio-icons-color;
+
+                a {
+                    color: $white-font;
+                }
+
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+
+        #portfolio-block .project{
+            &:nth-last-of-type(-n+2) {
+                margin-bottom: 40px;
+            }
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+            padding: 0;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .inner-section {
+            padding: 45px 15px;
         }
     }
 
