@@ -39,6 +39,9 @@
                 &.ihs {
                     background-image: url('../img/ihs.jpg');
                 }
+                &.ella{
+                    background-image: url('../img/ella.jpg');
+                }
                 &:hover {
                     opacity: .8;
                 }
@@ -52,7 +55,7 @@
                 transition: all 1s ease;
 
                 cursor: pointer;
-                border: 1px dashed black;
+                border: 1px dashed $portfolio-icons-color;
 
                 a {
                     display: block;

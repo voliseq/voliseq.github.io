@@ -644,6 +644,8 @@ footer.dark {
         background-image: url("../img/charts.jpg"); }
       #portfolio #portfolio-block .project .project-content.ihs {
         background-image: url("../img/ihs.jpg"); }
+      #portfolio #portfolio-block .project .project-content.ella {
+        background-image: url("../img/ella.jpg"); }
       #portfolio #portfolio-block .project .project-content:hover {
         opacity: .8; }
   #portfolio #portfolio-block .icons-row {
@@ -651,7 +653,7 @@ footer.dark {
     #portfolio #portfolio-block .icons-row .icon {
       transition: all 1s ease;
       cursor: pointer;
-      border: 1px dashed black; }
+      border: 1px dashed #b7b7b7; }
       #portfolio #portfolio-block .icons-row .icon a {
         display: block;
         width: 100%;
