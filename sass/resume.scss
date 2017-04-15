@@ -1,4 +1,7 @@
 #resume {
+    section.light{
+        background-color: #f7f7f7;
+    }
     a {
         transition: all 0.3s ease;
         text-decoration: none;
@@ -90,6 +93,16 @@
                     background-position: center;
                     background-size: cover;
                 }
+                .timeline-maciek-02 {
+                    background: url(../img/cs.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+                .timeline-maciek-03 {
+                    background: url(../img/eventile.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
                 .timeline-time {
                     transition: background-color .5s ease;
                     background-color: $medium-dark-font;
@@ -112,7 +125,7 @@
                 font-size: 0.875rem;
             }
             h6 {
-                margin-bottom: 8px;
+                margin-bottom: 0px;
                 color: #8f8f8f;
                 letter-spacing: 1px;
             }

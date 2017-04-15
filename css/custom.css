@@ -491,6 +491,8 @@ footer.dark {
 #resume {
   min-height: 500px;
   background-color: #fff; }
+  #resume section.light {
+    background-color: #f7f7f7; }
   #resume a {
     transition: all 0.3s ease;
     text-decoration: none;
@@ -566,6 +568,14 @@ footer.dark {
         background: url(../img/diamed.jpg);
         background-position: center;
         background-size: cover; }
+      #resume #timeline ul.timeline-vert .timeline-panel .timeline-maciek-02 {
+        background: url(../img/cs.jpg);
+        background-position: center;
+        background-size: cover; }
+      #resume #timeline ul.timeline-vert .timeline-panel .timeline-maciek-03 {
+        background: url(../img/eventile.jpg);
+        background-position: center;
+        background-size: cover; }
       #resume #timeline ul.timeline-vert .timeline-panel .timeline-time {
         transition: background-color .5s ease;
         background-color: #676767;
@@ -582,7 +592,7 @@ footer.dark {
       font-family: "Open Sans", sans-serif;
       font-size: 0.875rem; }
     #resume #timeline ul.timeline-vert h6 {
-      margin-bottom: 8px;
+      margin-bottom: 0px;
       color: #8f8f8f;
       letter-spacing: 1px; }
     #resume #timeline ul.timeline-vert p {
