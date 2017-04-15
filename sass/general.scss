@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 //fonts
 body {
+    background-color: transparent;
+    overflow-x: hidden;
     padding: 20px 0;
     -webkit-font-smoothing: antialiased;;
     text-rendering: optimizeLegibility;
@@ -11,7 +13,10 @@ body {
     font-size: 1rem;
 
 }
-
+html{
+    background: url('../img/retina_wood.png');
+    background-repeat:repeat;
+}
 h1, h2, h3, h4 {
     font-family: "Exo 2", sans-serif
 }
@@ -81,7 +86,9 @@ h3.title{
 }
 //paddings n display
 
-
+.padding-personal{
+    padding: 50px 20px 50px 50px;
+}
 .rotate-90{
     transform: rotate(90deg);
 }
@@ -140,7 +147,9 @@ h3.title{
     .padding-50{
         padding: 30px 14px 35px 14px;
     }
-
+    .padding-personal{
+        padding: 30px 14px 35px 14px;
+    }
 }
  //buttons
 .btn-wh-trans{

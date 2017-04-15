@@ -33,6 +33,7 @@
             line-height: 1.6em;
             font-size: 14px;
             font-weight: 400;
+            word-break: break-word;
         }
 
         .two {
@@ -46,8 +47,16 @@
             display: block;
             clear: both;
         }
+
+        @media only screen and (max-width: 767px){
+            .two{
+                width: 100%;
+            }
+        }
+
     }
     #details {
+        background-color: $white-font;
         flex-shrink: 1;
         flex-basis: auto;
         display: flex;

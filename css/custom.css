@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 body {
+  background-color: transparent;
+  overflow-x: hidden;
   padding: 20px 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 1rem; }
+
+html {
+  background: url("../img/retina_wood.png");
+  background-repeat: repeat; }
 
 h1, h2, h3, h4 {
   font-family: "Exo 2", sans-serif; }
@@ -69,6 +75,9 @@ h3.title {
 .color-blue {
   color: #3498db; }
 
+.padding-personal {
+  padding: 50px 20px 50px 50px; }
+
 .rotate-90 {
   transform: rotate(90deg); }
 
@@ -118,6 +127,8 @@ h3.title {
 
 @media only screen and (max-width: 480px) {
   .padding-50 {
+    padding: 30px 14px 35px 14px; }
+  .padding-personal {
     padding: 30px 14px 35px 14px; } }
 
 .btn-wh-trans {
@@ -200,6 +211,9 @@ header {
         transition: color 0.5s;
         position: relative;
         top: 25px; }
+      header .row:first-child .sweep-right i.codewars {
+        font-size: 3.25rem;
+        top: 30px; }
     header .row:first-child .sweep-right:hover {
       background-position: -100% 0%; }
       header .row:first-child .sweep-right:hover i {
@@ -291,7 +305,8 @@ header {
   #personal-row #personal .two p {
     line-height: 1.6em;
     font-size: 14px;
-    font-weight: 400; }
+    font-weight: 400;
+    word-break: break-word; }
   #personal-row #personal .two {
     display: inline-block;
     position: relative;
@@ -300,8 +315,12 @@ header {
     margin: 0 0 13px 0;
     display: block;
     clear: both; }
+  @media only screen and (max-width: 767px) {
+    #personal-row #personal .two {
+      width: 100%; } }
 
 #personal-row #details {
+  background-color: #fff;
   flex-shrink: 1;
   flex-basis: auto;
   display: flex; }
@@ -487,6 +506,9 @@ footer.dark {
         margin-bottom: 8px; }
       footer.dark .cv-link a:last-of-type {
         margin-bottom: 0; } }
+  @media only screen and (max-width: 400px) {
+    footer.dark .boxes .box {
+      width: 100%; } }
 
 #resume {
   min-height: 500px;

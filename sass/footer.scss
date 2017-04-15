@@ -100,4 +100,10 @@ footer.dark{
             margin-bottom: 0;
         }
     }
+    @media only screen and(max-width: 400px){
+        .boxes .box{
+            width: 100%;
+        }
+
+    }
 }
