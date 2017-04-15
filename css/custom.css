@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 body {
+  padding: 20px 0;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -130,7 +131,10 @@ h3.title {
   border-radius: 3px;
   margin-top: 8px; }
   .btn-wh-trans:hover {
-    background: #e74c3c; }
+    background: #e74c3c;
+    color: #fff; }
+  .btn-wh-trans:active {
+    color: #fff; }
 
 header {
   color: #fff; }
@@ -408,7 +412,7 @@ header {
     bottom: 15px; } }
 
 footer.dark {
-  height: 390px;
+  height: 340px;
   background-color: #224870; }
   footer.dark h5 {
     font-size: 1rem;

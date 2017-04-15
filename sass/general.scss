@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 //fonts
 body {
+    padding: 20px 0;
     -webkit-font-smoothing: antialiased;;
     text-rendering: optimizeLegibility;
     font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -155,6 +156,10 @@ h3.title{
     margin-top: 8px;
     &:hover{
         background: #e74c3c;
+        color: $white-font;
+    }
+    &:active{
+        color: $white-font;
     }
 }
 
