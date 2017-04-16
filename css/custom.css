@@ -686,21 +686,32 @@ footer.dark {
         background-image: url("../img/ihs.jpg"); }
       #portfolio #portfolio-block .project .project-content.ella {
         background-image: url("../img/ella.jpg"); }
+      #portfolio #portfolio-block .project .project-content.angular2 {
+        background-image: url("../img/angular2.png"); }
+      #portfolio #portfolio-block .project .project-content.maintance {
+        background-image: url("../img/inprogress.jpg"); }
       #portfolio #portfolio-block .project .project-content:hover {
         opacity: .8; }
   #portfolio #portfolio-block .icons-row {
     text-align: center; }
+    #portfolio #portfolio-block .icons-row span {
+      height: 48px; }
+      #portfolio #portfolio-block .icons-row span i {
+        position: relative;
+        top: 3px; }
     #portfolio #portfolio-block .icons-row .icon {
       transition: all 1s ease;
       cursor: pointer;
       border: 1px dashed #b7b7b7; }
-      #portfolio #portfolio-block .icons-row .icon a {
+      #portfolio #portfolio-block .icons-row .icon a, #portfolio #portfolio-block .icons-row .icon span {
         display: block;
         width: 100%;
         color: #b7b7b7; }
+      #portfolio #portfolio-block .icons-row .icon.icon-no-link {
+        cursor: default; }
     #portfolio #portfolio-block .icons-row .icon:hover {
       background-color: #b7b7b7; }
-      #portfolio #portfolio-block .icons-row .icon:hover a {
+      #portfolio #portfolio-block .icons-row .icon:hover a, #portfolio #portfolio-block .icons-row .icon:hover span {
         color: #fff; }
   @media only screen and (max-width: 992px) {
     #portfolio #portfolio-block .project {
