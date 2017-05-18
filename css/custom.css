@@ -680,6 +680,10 @@ footer.dark {
       background-position: center center; }
       #portfolio #portfolio-block .project .project-content.eventile {
         background-image: url("../img/eventile.jpg"); }
+      #portfolio #portfolio-block .project .project-content.som {
+        background-image: url("../img/som.jpg"); }
+      #portfolio #portfolio-block .project .project-content.quiz {
+        background-image: url("../img/quiz.jpg"); }
       #portfolio #portfolio-block .project .project-content.charts {
         background-image: url("../img/charts.jpg"); }
       #portfolio #portfolio-block .project .project-content.ihs {
