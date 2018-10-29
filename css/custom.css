@@ -163,8 +163,10 @@ header {
     height: 360px; }
   header .boxes {
     cursor: pointer;
+    display: flex;
     padding: 0; }
     header .boxes .box {
+      flex: 1;
       text-align: center;
       transition: background-position .5s;
       background-size: 100% 200%; }
