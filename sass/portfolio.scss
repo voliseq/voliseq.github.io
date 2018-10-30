@@ -30,6 +30,9 @@
                 height: 300px;
                 background-size: cover;
                 background-position: center center;
+                &.weather {
+                    background-image: url('../img/weather.jpg');
+                }
                 &.eventile {
                     background-image: url('../img/eventile.jpg');
                 }

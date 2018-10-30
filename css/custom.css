@@ -680,6 +680,8 @@ footer.dark {
       height: 300px;
       background-size: cover;
       background-position: center center; }
+      #portfolio #portfolio-block .project .project-content.weather {
+        background-image: url("../img/weather.jpg"); }
       #portfolio #portfolio-block .project .project-content.eventile {
         background-image: url("../img/eventile.jpg"); }
       #portfolio #portfolio-block .project .project-content.som {
