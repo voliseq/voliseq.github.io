@@ -592,6 +592,10 @@ footer.dark {
       padding: 30px; }
       #resume #timeline ul.timeline-vert .timeline-panel .timeline-photo {
         min-height: 250px; }
+      #resume #timeline ul.timeline-vert .timeline-panel .timeline-maciek-00 {
+        background: url(../img/angular.jpg);
+        background-position: center;
+        background-size: contain; }
       #resume #timeline ul.timeline-vert .timeline-panel .timeline-maciek-01 {
         background: url(../img/diamed.jpg);
         background-position: center;
